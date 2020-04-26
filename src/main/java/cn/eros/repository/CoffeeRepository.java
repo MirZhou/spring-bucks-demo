@@ -1,7 +1,6 @@
 package cn.eros.repository;
 
 import cn.eros.entity.Coffee;
-import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -10,5 +9,5 @@ import org.springframework.stereotype.Repository;
  * @author 周光兵
  */
 @Repository
-public interface CoffeeRepository extends JpaRepository<Coffee, Long> {
+public interface CoffeeRepository extends BaseRepository<Coffee, Long> {
 }

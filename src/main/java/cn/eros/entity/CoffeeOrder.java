@@ -28,7 +28,7 @@ public class CoffeeOrder implements Serializable {
     @GeneratedValue
     private Long id;
     private String customer;
-    @OneToMany
+    @ManyToMany
     @JoinTable(name = "t_order_coffee")
     @OrderBy("id")
     private List<Coffee> coffees;
